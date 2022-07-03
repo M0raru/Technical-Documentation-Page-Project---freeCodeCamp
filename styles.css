@@ -1,0 +1,105 @@
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: cursive;
+}
+
+.title {
+  text-align: center;
+}
+
+#navbar{
+  background-color: black;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex a {
+  border: 1px solid white;
+  color: white;
+  margin: 1em;
+  padding: .5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+#main-doc {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.main-section {
+  border-bottom: 2px solid black;
+  padding-bottom: 1em;
+}
+
+.main-section header h2{
+  text-indent: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1.7rem;
+}
+
+.main-section p{
+  text-indent: 1em;
+  padding-bottom: .5em;
+  font-size: 1.2rem;
+}
+
+.main-section code{
+ font-weight: bolder;
+ font-size: 1.5rem;
+ background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-section ul{
+  font-weight: bold;
+  padding-left: 5em;
+  padding-bottom: .5em;
+}
+
+.back-top {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0 .5em .5em .5em;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-indent: 2.5rem;
+  padding: .5em;
+}
+
+@media (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex a {
+    width: 100%;
+    margin: .1em;
+  } 
+}
